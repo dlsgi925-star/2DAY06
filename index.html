@@ -79,5 +79,29 @@
       <a id="apply-link" href="#">오픈채팅방 "팔백가자"</a>
     </section>
   </main>
+
+  <script>
+    var tabButtons = document.querySelectorAll('#tabs button');
+    var panels = document.querySelectorAll('.tab-panel');
+
+    // 선택한 탭의 표만 보여주고, 선택된 탭 버튼을 표시
+    function showTab(id) {
+      panels.forEach(function (panel) {
+        panel.hidden = panel.id !== id;
+      });
+      tabButtons.forEach(function (btn) {
+        btn.setAttribute('aria-selected', String(btn.dataset.tab === id));
+      });
+    }
+
+    tabButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        showTab(btn.dataset.tab);
+      });
+    });
+
+    // 처음에는 1~2주 탭을 보여줌
+    showTab('plan-1');
+  </script>
 </body>
 </html>
