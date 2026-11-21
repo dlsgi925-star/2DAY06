@@ -4,6 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>토익 스터디 팔백가자 모집</title>
+  <style>
+    :root {
+      --bg: #f3f7fd;
+      --card: #ffffff;
+      --text: #1f2a44;
+      --muted: #5f6f8c;
+      --blue: #2563eb;
+      --blue-dark: #1e3a8a;
+      --blue-soft: #dbeafe;
+      --stripe: #eff5ff;
+      --line: #d3e0f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Malgun Gothic", "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      word-break: keep-all;
+    }
+    header {
+      padding: 36px 16px 32px;
+      text-align: center;
+      background: var(--blue-dark);
+      color: #fff;
+    }
+    header h1 { margin: 0 0 6px; font-size: 2rem; letter-spacing: .08em; }
+    header p { margin: 0; color: #cfe0ff; }
+    main { max-width: 640px; margin: 0 auto; padding: 20px 16px 40px; }
+    section {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(30, 58, 138, .1);
+    }
+    h2 {
+      margin: 0 0 14px;
+      padding-left: 10px;
+      border-left: 4px solid var(--blue);
+      font-size: 1.15rem;
+      color: var(--blue-dark);
+    }
+    section ul { list-style: none; margin: 0; padding: 0; }
+    section li {
+      padding: 10px 4px;
+      border-top: 1px solid var(--line);
+    }
+    section li:first-child { border-top: 0; }
+
+    /* 탭 */
+    #tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+    #tabs button {
+      flex: 1;
+      min-height: 46px;
+      border: 1px solid var(--blue);
+      border-radius: 10px;
+      background: var(--card);
+      color: var(--blue);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    #tabs button[aria-selected="true"] {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    /* 표 + 줄무늬 */
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px 14px; text-align: left; }
+    thead th { background: var(--blue-dark); color: #fff; }
+    thead th:first-child { border-radius: 10px 0 0 0; }
+    thead th:last-child { border-radius: 0 10px 0 0; }
+    tbody td:first-child { width: 32%; font-weight: 700; color: var(--blue-dark); }
+    tbody tr:nth-child(odd) { background: var(--blue-soft); }
+    tbody tr:nth-child(even) { background: var(--stripe); }
+
+    /* 지원 링크 */
+    #apply-link {
+      display: block;
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
